@@ -4,6 +4,10 @@
     {
         public int OrderItemId { get; set; }
         public int Quantity { get; set; }
+        
+        /// <summary>
+        /// Represents a FK
+        /// </summary>
         public virtual Product Product { get; set; }
     }
 }
