@@ -3,7 +3,7 @@ using ORM_NetCore_EF.Database.Tables;
 
 namespace ORM_NetCore_EF.Database
 {
-    public class Database : DbContext
+    public class DatabaseContext : DbContext
     {
         public DbSet<Product> Products { get; set; }
 
