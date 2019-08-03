@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System;
+using System.IO;
+using Microsoft.EntityFrameworkCore;
 using ORM_NetCore_EF.Database.Tables;
 
 namespace ORM_NetCore_EF.Database
@@ -13,7 +15,9 @@ namespace ORM_NetCore_EF.Database
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source=orm-sample.db");
+            var databaseFile = Path.Combine(Directory.GetCurrentDirectory(), @"..\..\..\orm-sample.db");
+            Console.WriteLine($"Sqlite database file: [{databaseFile}]");
+            optionsBuilder.UseSqlite($"Data Source={databaseFile}");
         }
     }
 }
