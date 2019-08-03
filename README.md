@@ -5,3 +5,4 @@
  * [Providers](https://docs.microsoft.com/en-us/ef/core/providers/?wt.mc_id=devto-blog-chnoring)
    * [Sqlite](http://www.sqlite.org/)
    * [Sqlite Connection Strings](https://www.connectionstrings.com/sqlite/)
+ * [Mock Data via Bogus](https://github.com/bchavez/Bogus)
