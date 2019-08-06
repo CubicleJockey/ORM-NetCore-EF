@@ -12,6 +12,6 @@ namespace ORM_NetCore_EF.Database.Tables
         /// <summary>
         /// This represents a 1-to-many relationship
         /// </summary>
-        public ICollection<OrderItem> Items { get; set; }
+        public ICollection<OrderItem> Items { get; set; } = new List<OrderItem>();
     }
 }
